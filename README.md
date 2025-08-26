@@ -105,38 +105,38 @@ jobs:
 
 - Exercise 2: Breaking the Build
 
-Intentionally introduce a bug (e.g., wrong import in app.py).
+     - Intentionally introduce a bug (e.g., wrong import in app.py).
 
-Push changes to your feature branch.
+    - Push changes to your feature branch.
 
-Observe GitHub Actions fail.
+    - Observe GitHub Actions fail.
 
-Fix the bug and push again.
+    - Fix the bug and push again.
 
-Confirm the pipeline turns green ✅.
+    - Confirm the pipeline turns green.
 
-📝 Exercise 3: Enforcing CI in Pull Requests
+- Exercise 3: Enforcing CI in Pull Requests
 
-Enable branch protection on main (Settings → Branches → Protect main).
+    - Enable branch protection on main (Settings → Branches → Protect main).
 
-Require that status checks must pass before merging.
+    - Require that status checks must pass before merging.
 
-Try merging a PR with failing tests → notice it’s blocked.
+    - Try merging a PR with failing tests → notice it’s blocked.
 
-📝 Exercise 4: Extend the Pipeline
+- Exercise 4: Extend the Pipeline
 
-Add a flake8 step in the CI pipeline for linting.
+    - Add a flake8 step in the CI pipeline for linting.
 
-Push code with a style violation.
+    - Push code with a style violation.
 
-Fix and confirm the pipeline passes again.
+    - Fix and confirm the pipeline passes again.
 
-6. Key Takeaways
+### Key Takeaways
 
-Branches isolate work, prevent conflicts, and make collaboration smooth.
+- Branches isolate work, prevent conflicts, and make collaboration smooth.
 
-Pull Requests allow for code review and safe merging.
+- Pull Requests allow for code review and safe merging.
 
-CI Pipelines automatically test and validate changes, ensuring quality.
+- CI Pipelines automatically test and validate changes, ensuring quality.
 
-Branch protection rules enforce CI before merging to main.
+- Branch protection rules enforce CI before merging to main.
