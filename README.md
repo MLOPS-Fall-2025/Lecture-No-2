@@ -33,13 +33,14 @@ git checkout -b feature/user-login
 
 Make changes & commit
 
-git add .
-git commit -m "Added user login form"
+`git add .`
+
+`git commit -m "Added user login form"`
 
 
 Push the branch to GitHub
 
-git push origin feature/user-login
+`git push origin feature/user-login`
 
 
 Open a Pull Request (PR)
