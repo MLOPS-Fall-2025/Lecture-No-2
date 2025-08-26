@@ -22,7 +22,7 @@ While you’re coding, GitHub Actions should automatically run tests to ensure y
 
 Clone the repository
 
-`git clone https://github.com/your-username/flask-app.git`
+``git clone https://github.com/your-username/flask-app.git``
 
 `cd flask-app`
 
