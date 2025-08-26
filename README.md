@@ -144,9 +144,11 @@ jobs:
 ### Flask minimal application
 Here’s a minimal Flask app with a simple login page. This example uses just Flask and HTML templates (no database yet, credentials are hardcoded for simplicity).
 
+```
 flask-login-app/
 │
 ├── app.py
 ├── templates/
 │   ├── login.html
 │   └── welcome.html
+```
