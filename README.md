@@ -91,3 +91,52 @@ jobs:
       - name: Run tests
         run: pytest
 ```
+
+### Exercises
+- Exercise 1: Branching Basics
+
+-- Create a new branch called feature/add-about-page.
+
+-- Add an about.html file in your Flask app.
+
+-- Commit & push changes.
+
+-- Open a PR to merge into main.
+
+- Exercise 2: Breaking the Build
+
+Intentionally introduce a bug (e.g., wrong import in app.py).
+
+Push changes to your feature branch.
+
+Observe GitHub Actions fail.
+
+Fix the bug and push again.
+
+Confirm the pipeline turns green ✅.
+
+📝 Exercise 3: Enforcing CI in Pull Requests
+
+Enable branch protection on main (Settings → Branches → Protect main).
+
+Require that status checks must pass before merging.
+
+Try merging a PR with failing tests → notice it’s blocked.
+
+📝 Exercise 4: Extend the Pipeline
+
+Add a flake8 step in the CI pipeline for linting.
+
+Push code with a style violation.
+
+Fix and confirm the pipeline passes again.
+
+6. Key Takeaways
+
+Branches isolate work, prevent conflicts, and make collaboration smooth.
+
+Pull Requests allow for code review and safe merging.
+
+CI Pipelines automatically test and validate changes, ensuring quality.
+
+Branch protection rules enforce CI before merging to main.
