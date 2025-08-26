@@ -95,13 +95,13 @@ jobs:
 ### Exercises
 - Exercise 1: Branching Basics
 
--- Create a new branch called feature/add-about-page.
+    - Create a new branch called feature/add-about-page.
 
--- Add an about.html file in your Flask app.
+    - Add an about.html file in your Flask app.
 
--- Commit & push changes.
+    - Commit & push changes.
 
--- Open a PR to merge into main.
+    - Open a PR to merge into main.
 
 - Exercise 2: Breaking the Build
 
