@@ -52,3 +52,42 @@ Compare feature/user-login → main.
 
 Request review → Merge when tests pass.
 
+### CI Pipeline with GitHub Actions
+
+Let’s set up a GitHub Actions workflow to run tests on every push or PR.
+
+- Create file: .github/workflows/ci.yml
+
+```
+name: CI Pipeline
+
+on:
+  push:
+    branches:
+      - main
+      - feature/*
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run tests
+        run: pytest
+```
