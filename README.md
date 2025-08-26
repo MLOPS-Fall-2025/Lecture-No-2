@@ -22,13 +22,13 @@ While you’re coding, GitHub Actions should automatically run tests to ensure y
 
 Clone the repository
 
-git clone https://github.com/your-username/flask-app.git
-cd flask-app
+`git clone https://github.com/your-username/flask-app.git`
+`cd flask-app`
 
 
 Create a new branch for the feature
 
-git checkout -b feature/user-login
+`git checkout -b feature/user-login`
 
 
 Make changes & commit
