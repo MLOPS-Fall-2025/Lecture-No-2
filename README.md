@@ -140,3 +140,13 @@ jobs:
 - CI Pipelines automatically test and validate changes, ensuring quality.
 
 - Branch protection rules enforce CI before merging to main.
+
+### Flask minimal application
+Here’s a minimal Flask app with a simple login page. This example uses just Flask and HTML templates (no database yet, credentials are hardcoded for simplicity).
+
+flask-login-app/
+│
+├── app.py
+├── templates/
+│   ├── login.html
+│   └── welcome.html
